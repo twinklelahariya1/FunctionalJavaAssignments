@@ -5,19 +5,22 @@
 <title>Insert title here</title>
 </head> 		
 <body>  
-<form action="Register" method="post">  
+<form action="RegisterUserServlet" method="post">  
 FirstName<input type="text" name="firstname"/><br/><br/>  
 LastName:<input type="text" name="lastname"/><br/><br/>  
-EmailId:<input type="email" name="email"/><br/><br/>
+EmailId:<input type="text" name="email"/><br/><br/>
 ContactNumber:<input type="number" name="contactno"/><br/><br/>  
-DateOfBirth:<input type="date" name="dateofbirth"/><br/><br/>   
 UserName:<input type="text" name="username"/><br/><br/> 
 UserPassword:<input type="text" name="userpassword"/><br/><br/> 
   
 <br/><br/>  
 <input type="submit" value="register"/>  
+
+
   
-</form>  
+</form> 
+
+<a href="Login.jsp"><input type="submit" value="Login"></a> 
 </body>  
 
 </html>

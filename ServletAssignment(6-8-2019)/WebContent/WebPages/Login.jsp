@@ -27,6 +27,6 @@
 		</table>
 
 	</form>
-
+<a href="RegistrationPage.jsp"><input type="submit" value="Register"></a> 
 </body>
 </html>

@@ -10,30 +10,25 @@
 
 
 	Welcome to Gl SHopping App
-	<form method="post" action="RegisterUserServlet">
 
 
 
 		<table>
-			<tr>
+			<tr>	
 				<td></td>
-				<td><input type="submit" value="Signup"></td>
+				<td><a href="RegistrationPage.jsp"><input type="submit" value="Signup"></a></td>
 			</tr>
 
 
 		</table>
-	</form>
-	<form method="post" action="LoginCheck">
-
 
 
 		<table>
 
 			<tr>
 				<td></td>
-				<td><input type="submit" value="login"></td>
+				<td><a href="Login.jsp"><input type="submit" value="login"></a></td>
 			</tr>
 		</table>
-	</form>
 </body>
 </html>
