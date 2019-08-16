@@ -7,6 +7,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 
 import model.Applicant;
+import model.ApplicantBackup;
 import util.HibernateUtil;
 
 public class SelectQuery {
@@ -16,16 +17,25 @@ public class SelectQuery {
         // Get session from Sesson factory
         Session session = sf.openSession();
         @SuppressWarnings("rawtypes")
-        Query query = session.createQuery("from Applicant");
-        List<Applicant> list = query.getResultList();
+        Query query = session.createQuery("from ApplicantBackup");
+//        List<Applicant> list = query.getResultList();
+//        System.out.println("Number of Applicants present--> "+list.size());
+//        for (Applicant applicant : list) {
+//
+//            System.out.println(applicant.getApplicantId());
+//            System.out.println(applicant.getFirstName());
+//        }
+        
+        List<ApplicantBackup> list = query.getResultList();
         System.out.println("Number of Applicants present--> "+list.size());
-        for (Applicant applicant : list) {
+        for (ApplicantBackup applicantBackup : list) {
 
-            System.out.println(applicant.getApplicantId());
-            System.out.println(applicant.getFirstName());
+            System.out.println(applicantBackup.getApplicantId());
+            System.out.println(applicantBackup.getFirstName());
         }
 
         session.close();
     }
 
 }
+

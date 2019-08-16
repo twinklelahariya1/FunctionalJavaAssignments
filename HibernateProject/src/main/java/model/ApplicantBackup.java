@@ -8,56 +8,63 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Applicant_Backup")
-class ApplicantBackup {
+@Table(name = "Applicant_Backup")
+public class ApplicantBackup {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "Applicant_Backup_Id")
-    private int applicantId;
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@Column(name = "Applicant_Backup_Id")
+	private int applicantId;
 
-    @Column(name = "FirstName")
-    private String firstName;
+	@Column(name = "FirstName")
+	private String firstName;
 
-    @Column(name = "LastName")
-    private String lastName;
+	@Column(name = "LastName")
+	private String lastName;
 
-    @Column(name = "Age")
-    private int age;
+	@Column(name = "Age")
+	private int age;
 
-    @Column(name = "Education")
-    private String education;
+	@Column(name = "Education")
+	private String education;
 
+	public int getApplicantId() {
+		return applicantId;
+	}
 
-    public int getApplicantId() {
-        return applicantId;
-    }
-    public void setApplicantId(int applicantId) {
-        this.applicantId = applicantId;
-    }
-    public String getFirstName() {
-        return firstName;
-    }
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-    public String getLastName() {
-        return lastName;
-    }
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-    public int getAge() {
-        return age;
-    }
-    public void setAge(int age) {
-        this.age = age;
-    }
-    public String getEducation() {
-        return education;
-    }
-    public void setEducation(String education) {
-        this.education = education;
-    }
+	public void setApplicantId(int applicantId) {
+		this.applicantId = applicantId;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getEducation() {
+		return education;
+	}
+
+	public void setEducation(String education) {
+		this.education = education;
+	}
 }
-

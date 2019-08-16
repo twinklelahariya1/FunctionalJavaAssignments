@@ -28,7 +28,7 @@
         <!-- Format the generated Sql -->
         <property name="format_sql">true</property>
 
-        <!-- Dont Drop and re-create the database schema on startup,Just update it -->
+        <!-- Don't Drop and re-create the database schema on startup,Just update it -->
         <property name="hbm2ddl.auto">update</property>
 
         <mapping class="model.Applicant" />
